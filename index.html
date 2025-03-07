@@ -2,223 +2,228 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>SQJ's HomePage</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
-    <link rel="shortcut icon" href="head.jpg" type="image/x-ico">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0GJ1MT00W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-T0GJ1MT00W');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SQJ's HomePage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+  <link rel="shortcut icon" href="head.jpg" type="image/x-ico">
 </head>
 
 <body class='mdui-theme-primary-deep-purple mdui-drawer-body-left mdui-theme-layout-auto'>
-    <div class="mdui-drawer" id="drawer">
-        <ul class="mdui-list">
-          <li class="mdui-list-item mdui-ripple" onclick="show('main')">
-            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-            <div class="mdui-list-item-content">Main</div>
-          </li>
-        </ul>
-        <ul class="mdui-list">
-          <li class="mdui-list-item mdui-ripple" onclick="show('websites')">
-            <i class="mdui-list-item-icon mdui-icon material-icons">web</i>
-            <div class="mdui-list-item-content">Websites</div>
-          </li>
-        </ul>
-        <ul class="mdui-list">
-          <li class="mdui-list-item mdui-ripple" onclick="show('social')">
-            <i class="mdui-list-item-icon mdui-icon material-icons">person_pin</i>
-            <div class="mdui-list-item-content">Social Accounts</div>
-          </li>
-        </ul>
-        <ul class="mdui-list">
-          <li class="mdui-list-item mdui-ripple" onclick="show('about')">
-            <i class="mdui-list-item-icon mdui-icon material-icons">info</i>
-            <div class="mdui-list-item-content">About</div>
-          </li>
-        </ul>
-    </div>
-    <div class="mdui-toolbar mdui-color-theme">
-      <a id="toggle" class="mdui-btn mdui-btn-icon">
-        <i class="mdui-icon material-icons">menu</i>
-      </a>
-      <span class="mdui-typo-title">SQJ's HomePage</span>
-      <div class="mdui-toolbar-spacer"></div>
-      <a href="/" class="mdui-btn mdui-btn-icon">
-        <i class="mdui-icon material-icons">refresh</i>
-      </a>
-      <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#info'}">
-        <i class="mdui-icon material-icons">more_vert</i>
-      </a>
-    </div>
-    <div id='main'>
-            <div class="mdui-card">
-                <div class="mdui-card-media">
-                    <img src="card.jpg"/>
-                    <div class="mdui-card-media-covered mdui-card-media-covered-top">
-                        <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">This is the homepage of SQJ.</div>
-                      <div class="mdui-card-primary-subtitle">Look the drawer for more information.</div>
-                  </div>
-                        <div class="mdui-card-actions">
-                    <button class="mdui-btn mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'Blaze'}">AKA1</button>
-                       <button class="mdui-btn mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'Broken'}">AKA2</button>
-                      <button class="mdui-btn mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'awaish'}">AKA3</button>
-                        <button class="mdui-btn mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'O5_6'}">AKA4</button>
-                  </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <div id='websites'>
-        <div class="mdui-tab mdui-tab-full-width" mdui-tab>
-            <a href="#tab1" class="mdui-ripple">Games</a>
-            <a href="#tab2" class="mdui-ripple">Tools</a>
-            <a href="#tab3" class="mdui-ripple">Chats</a>
-            <a href="#tab4" class="mdui-ripple">Others</a>
+  <div class="mdui-drawer" id="drawer">
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple" onclick="show('main')">
+        <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+        <div class="mdui-list-item-content">Main</div>
+      </li>
+    </ul>
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple" onclick="show('websites')">
+        <i class="mdui-list-item-icon mdui-icon material-icons">web</i>
+        <div class="mdui-list-item-content">Websites</div>
+      </li>
+    </ul>
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple" onclick="show('social')">
+        <i class="mdui-list-item-icon mdui-icon material-icons">person_pin</i>
+        <div class="mdui-list-item-content">Social Accounts</div>
+      </li>
+    </ul>
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple" onclick="show('about')">
+        <i class="mdui-list-item-icon mdui-icon material-icons">info</i>
+        <div class="mdui-list-item-content">About</div>
+      </li>
+    </ul>
+  </div>
+  <div class="mdui-toolbar mdui-color-theme">
+    <a id="toggle" class="mdui-btn mdui-btn-icon">
+      <i class="mdui-icon material-icons">menu</i>
+    </a>
+    <span class="mdui-typo-title">SQJ's HomePage</span>
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="/" class="mdui-btn mdui-btn-icon">
+      <i class="mdui-icon material-icons">refresh</i>
+    </a>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#info'}">
+      <i class="mdui-icon material-icons">more_vert</i>
+    </a>
+  </div>
+  <div id='main'>
+    <div class="mdui-card">
+      <div class="mdui-card-media">
+        <img src="card.jpg" />
+        <div class="mdui-card-media-covered mdui-card-media-covered-top">
+          <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">This is the homepage of SQJ.</div>
+            <div class="mdui-card-primary-subtitle">Look the drawer for more information.</div>
+          </div>
+          <div class="mdui-card-actions">
+            <button class="mdui-btn mdui-ripple mdui-ripple-white"
+              mdui-tooltip="{content: 'UnmouthedBlaze'}">AKA1</button>
+            <button class="mdui-btn mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'Broken'}">AKA2</button>
+            <button class="mdui-btn mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'awaish'}">AKA3</button>
+            <a href="https://sqj365.blogspot.com/" target="_blank" class="mdui-btn mdui-ripple mdui-ripple-white"
+              mdui-tooltip="{content: 'Go To the Blog'}">My Blog</a>
+          </div>
         </div>
-        <div id="tab1" class="mdui-p-a-2">
-            <div class="mdui-list">
-                <li class="mdui-subheader">独家原创</li>
-                <a href="https://cai-shu-zi.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">猜数字 —— 纯粹的js小游戏</a>
-                <a href="https://feng-7guo.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">逢7过 —— 拥有Django后端的小游戏</a>
-                <li class="mdui-subheader">Forked</li>
-                <a href="https://sweeper.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">扫雷 —— 没有的js小游戏</a>
-                <a href="https://wordle-remix.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">Wordle —— 经典游戏，不过remix</a>
-                <a href="https://flappy-bird.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">Flappy Bird —— 经典游戏，不过用的Kaboom框架</a>
-                <a href="https://mario.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">马里奥 —— 经典游戏，还是用的Kaboom框架</a>
-                <a href="https://blockbreaker.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">打砖块 —— 经典游戏，依旧用的Kaboom（谁让replit给教程了</a>
-                <a href="https://mc1-3.pages.dev/" onclick='link()' class="mdui-list-item mdui-ripple ">Eaglercraft beta 1.3 —— MC 1.3全特性网页版</a>
-                <a href="https://mc1-5.pages.dev/" onclick='link()' class="mdui-list-item mdui-ripple ">Eaglercraft 1.5.2 —— MC 1.5.2全特性网页版</a>
-                <a href="https://mc1-8.pages.dev/" onclick='link()' class="mdui-list-item mdui-ripple ">EaglercraftX 1.8 —— MC 1.8.8全特性网页版</a>
-            </div>
-        </div>
-        <div id="tab2" class="mdui-p-a-2">
-            <div class="mdui-list">
-                <li class="mdui-subheader">独家原创</li>
-                <a href="https://ji-suan-qi.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">计算器 —— 但是没有小数点</a>
-                <a href="https://pic2chr.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">字符画生成器 —— 非常实用，可以分享和保存</a>
-                <a href="https://cloud.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">文件传输 —— 阉割的网盘，文件不定期清空</a>
-                <li class="mdui-subheader">合作项目</li>
-                <a href="https://trip.unmouthedblaze.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">识别码资源站 —— 提供免费的识别码</a>
-                <a href="https://cloud.unmouthedblaze.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">UB云盘 —— 免费、高速且不稳定的网盘</a>
-            </div>
-        </div>
-        <div id="tab3" class="mdui-p-a-2">
-            <div class="mdui-list">
-                <li class="mdui-subheader">独家原创</li>
-                <a href="https://msg.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">MSG —— 老论坛的替代品，看样子也要挂</a>
-                <a href="https://funtube.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">Funtube —— 视频网站，类似小破站</a>
-                <a href="https://6chat.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">六字街 —— 一个十字街客户端</a>
-                <li class="mdui-subheader">Forked</li>
-                <a href="https://chat.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">SQJ Chat —— 实时的聊天室，基于node.js</a>
-                <a href="https://bbs.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">SQJ BBS —— 论坛3.0</a>
-            </div>
-        </div>
-        <div id="tab4" class="mdui-p-a-2">
-            <div class="mdui-list">
-                <li class="mdui-subheader">独家原创</li>
-                <a href="https://three-body.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">三体句子 —— 随机生成三体中的句子，同时配有图片</a>
-                <a href="https://fool.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">Fool —— 愚人节专用</a>
-                <a mdui-dialog="{target: '#ask'}" class="mdui-list-item mdui-ripple ">Homepage —— 我的个人主页</a>
-                <li class="mdui-subheader">Forked</li>
-                <a href="https://blog.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">Blog —— 我的博客</a>
-                <a href="https://pinboard.sqj.repl.co" onclick='link()' class="mdui-list-item mdui-ripple ">Pinboard —— 日常生活记录板</a>
-            </div>
-        </div>
+      </div>
     </div>
-    <div id='social'>
-        <ul class="mdui-list mdui-list-dense">
-          <li class="mdui-list-item mdui-ripple" onclick="window.open('https://twitter.com/SQJ11216730');">
-            <div class="mdui-list-item-avatar">
-              <img src="social/twitter.jpg"/>
-            </div>
-            <div class="mdui-list-item-content">
-              <div class="mdui-list-item-title">Twitter</div>
-              <div class="mdui-list-item-text mdui-list-item-two-line">
-                <span class="mdui-text-color-theme-text">SQJ11216730</span>
-              </div>
-            </div>
-          </li>
-          <li class="mdui-divider-inset mdui-m-y-0"></li>
-          <li class="mdui-list-item mdui-ripple" onclick="window.open('https://github.com/geGDVS');">
-            <div class="mdui-list-item-avatar">
-              <img src="social/github.jpg"/>
-            </div>
-            <div class="mdui-list-item-content">
-              <div class="mdui-list-item-title">Github</div>
-              <div class="mdui-list-item-text mdui-list-item-two-line">
-                <span class="mdui-text-color-theme-text">geGDVS</span> 
-              </div>
-            </div>
-          </li>
-            <li class="mdui-divider-inset mdui-m-y-0"></li>
-            <li class="mdui-list-item mdui-ripple" onclick="copy();">
-                <div class="mdui-list-item-avatar">
-                  <img src="social/discord.jpg"/>
-                </div>
-                <div class="mdui-list-item-content">
-                  <div class="mdui-list-item-title">Discord</div>
-                  <div class="mdui-list-item-text mdui-list-item-two-line">
-                    <span class="mdui-text-color-theme-text">SQJ#5152</span> 
-                  </div>
-                </div>
-            </li>
-            <li class="mdui-divider-inset mdui-m-y-0"></li>
-            <li class="mdui-list-item mdui-ripple" onclick="window.open('https://www.youtube.com/channel/UCkKrXg-IEJTmSEElDTJ2dHw');">
-                <div class="mdui-list-item-avatar">
-                  <img src="social/youtube.jpg"/>
-                </div>
-                <div class="mdui-list-item-content">
-                  <div class="mdui-list-item-title">Youtube Channel</div>
-                  <div class="mdui-list-item-text mdui-list-item-two-line">
-                    <span class="mdui-text-color-theme-text">https://www.youtube.com/channel/UCkKrXg-IEJTmSEElDTJ2dHw</span> 
-                  </div>
-                </div>
-            </li>
-            <li class="mdui-divider-inset mdui-m-y-0"></li>
-            <li class="mdui-list-item mdui-ripple" onclick="window.open('https://replit.com/@SQJ');">
-                <div class="mdui-list-item-avatar">
-                  <img src="social/replit.jpg"/>
-                </div>
-                <div class="mdui-list-item-content">
-                  <div class="mdui-list-item-title">Replit</div>
-                  <div class="mdui-list-item-text mdui-list-item-two-line">
-                    <span class="mdui-text-color-theme-text">SQJ</span> 
-                  </div>
-                </div>
-            </li>
-            <li class="mdui-divider-inset mdui-m-y-0"></li>
-            <li class="mdui-list-item mdui-ripple" onclick="window.open('mailto:sunqijun_2008@outlook.com');">
-                <div class="mdui-list-item-avatar">
-                  <img src="social/email.jpg"/>
-                </div>
-                <div class="mdui-list-item-content">
-                  <div class="mdui-list-item-title">Email</div>
-                  <div class="mdui-list-item-text mdui-list-item-two-line">
-                    <span class="mdui-text-color-theme-text">sunqijun_2008@outlook.com</span> 
-                  </div>
-                </div>
-            </li>
-        </ul>
+  </div>
+  <div id='websites'>
+    <div class="mdui-tab mdui-tab-full-width" mdui-tab>
+      <a href="#tab1" class="mdui-ripple">Games</a>
+      <a href="#tab2" class="mdui-ripple">Study</a>
+      <a href="#tab3" class="mdui-ripple">Others</a>
     </div>
-    <div id='about'>
-        <div class="mdui-typo">
-          <blockquote>
-            <h1>There's Nothing! LOL</h1>
-            <footer>——SQJ</footer>
-          </blockquote>
+    <div id="tab1" class="mdui-p-a-2">
+      <div class="mdui-list">
+        <li class="mdui-subheader">Forked</li>
+        <a href="https://mc1-3.pages.dev/" onclick='link()' class="mdui-list-item mdui-ripple ">Eaglercraft beta 1.3 ——
+          MC 1.3全特性网页版</a>
+        <a href="https://mc1-5.pages.dev/" onclick='link()' class="mdui-list-item mdui-ripple ">Eaglercraft 1.5.2 —— MC
+          1.5.2全特性网页版</a>
+        <a href="https://mc1-8.pages.dev/" onclick='link()' class="mdui-list-item mdui-ripple ">EaglercraftX 1.8 —— MC
+          1.8.8全特性网页版</a>
+      </div>
+    </div>
+    <div id="tab2" class="mdui-p-a-2">
+      <div class="mdui-list">
+        <li class="mdui-subheader">独家原创</li>
+        <a href="https://ptableq.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">PtableQ ——
+          化学元素周期表背诵自查</a>
+        <a href="https://qgl.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">SEWT —— 高考英语词汇全攻略背诵自查</a>
+      </div>
+    </div>
+    <div id="tab3" class="mdui-p-a-2">
+      <div class="mdui-list">
+        <li class="mdui-subheader">独家原创</li>
+        <a mdui-dialog="{target: '#ask'}" class="mdui-list-item mdui-ripple ">Homepage —— 我的个人主页</a>
+        <a href="https://cloudflare-official.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">我不到啊</a>
+        <a href="https://ntm.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">骂人的，别点</a>
+      </div>
+    </div>
+  </div>
+  <div id='social'>
+    <ul class="mdui-list mdui-list-dense">
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('https://t.me/unbla');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/telegram.jpg" />
         </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Telegram</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">Unbla</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('https://x.com/SQJ11216730');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/x.jpg" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">X</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">SQJ11216730</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('https://github.com/geGDVS');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/github.jpg" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Github</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">geGDVS</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="copy();">
+        <div class="mdui-list-item-avatar">
+          <img src="social/discord.jpg" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Discord</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">SQJ#5152</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('https://www.youtube.com/@QingjianSu');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/youtube.jpg" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Youtube</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">@QingjianSu</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('https://replit.com/@SQJ');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/replit.jpg" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Replit</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">@SQJ</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('mailto:unblze@gmail.com');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/email.jpg" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Email</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">unblze@gmail.com</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id='about'>
+    <div class="mdui-typo" style="padding: 20px;">
+      <h1>Information</h1>
+      <p>Developed by SQJ. All rights reserved.</p>
+      <p>Page edited on March 7 2025.</p>
     </div>
-    <div class="mdui-dialog" id="info">
-      <div class="mdui-dialog-title">Information</div>
-      <div class="mdui-dialog-content">Developed by SQJ. All rights reserved.<br>Page created on June 30 2023</div>
+  </div>
+  <div class="mdui-dialog" id="info">
+    <div class="mdui-dialog-title">给DarkT的小惊喜</div>
+    <div class="mdui-dialog-content">
+      <div class="mdui-typo">
+        <p>DarkT是我的好朋友，特此为他搭建网站：<a href="https://vitaminb.pages.dev" target="_blank">VitaminB!</a></p>
+      </div>
     </div>
-    <div class="mdui-dialog" id="ask">
-      <div class="mdui-dialog-title">Aren't you here?</div>
-    </div>
-    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="purple" position="bottom-right"></script>
+  </div>
+  <div class="mdui-dialog" id="ask">
+    <div class="mdui-dialog-title">Aren't you here?</div>
+  </div>
+  <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Grave For Replit
+      <script src="https://replit.com/public/js/replit-badge-v2.js" theme="purple" position="bottom-right"></script> 
+    -->
 </body>
 
 </html>
