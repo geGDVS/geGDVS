@@ -1,6 +1,8 @@
 ### Hi there 👋
 
 My website: https://sqj.pages.dev/
+
+**由于某些原因，此账号可能会在不久后被注销。**
 <!--
 **geGDVS/geGDVS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
